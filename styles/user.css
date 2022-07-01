@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+#home {
+    background: linear-gradient(rgba(18, 17, 18, 0.3), rgba(26, 25, 25, 0.3)), url('../images/small_house_with_key_home.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.custom-sell {
+    background-color: red;
+}
+  
