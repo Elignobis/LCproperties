@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LC Properties</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./styles/admin.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap@home -->
+    <!-- <link rel="stylesheet" href="./css/bootstrap.min.css"> -->
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg sticky-md-top navbar-custom">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">LC Properties</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="user.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#system">Sytem</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+                <a href="user.html" target="_blank"><button class="btn log-out-btn" type="button">View Site</button></a>
+              </form> &nbsp;
+            <form class="d-flex">
+              <a href="index.html" target="_blank"><button class="btn log-out-btn" type="button">Log out</button></a>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <section class="welcome-admin vh-100" id="welcome-admin">
+        <div class="h-50 d-flex align-items-center justify-content-center welcome">
+            <div>
+                <h1 id="heading">Welcome Admin</h1>
+                <div class="d-flex justify-content-center">
+                    <a href="user.html" target="_blank" class="text-md-center"><button class="btn log-out-btn" type="button">View Main Site</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="system" class="vh-100">
+        
+    </section>
+    <script src="./scripts/admin.js"></script>
+</body>
+</html>
