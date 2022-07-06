@@ -3,6 +3,8 @@
 
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 body {
@@ -90,6 +92,15 @@ body {
     background-color: rgb(212, 148, 28);
 }
 
+.box input[type="text"]:focus, .box input[type="password"]:hover {
+    box-shadow: 3px 3px 3px 3px rgb(175,169,177);
+    cursor: text;
+}
+
+#usertype:hover {
+    box-shadow: 3px 3px 3px 3px rgb(175,169,177);
+}
+
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     color: rgb(255, 255, 255);
   }
@@ -110,5 +121,40 @@ body {
 
 .box input[type=" button"]:hover {
     background-color: rgb(212, 148, 28);
+}
+
+.login-details {
+    width: 280px;
+    padding: 30px;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.808);
+    color: black;
+    position: absolute;
+    border: 1px solid red;
+    z-index: 1;
+    border-radius: 20px;
+}
+
+.login-details:hover {
+    box-shadow: 3px 3px 3px 3px rgb(175,169,177);
+}
+
+.login-details h5 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+li {
+    list-style: square;
+}
+
+.user-word {
+    color: rgb(47, 99, 255);
+}
+
+.admin-word {
+    color: rgb(247, 100, 26);
 }
 
