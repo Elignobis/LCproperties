@@ -122,4 +122,5 @@ label.validation-error {
 #table-bg {
     background-color: rgba(210, 210, 210, 0.801);
     border-radius: 20px;
+    width: 80%;
 }
