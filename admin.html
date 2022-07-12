@@ -64,7 +64,11 @@
         <table class="text-white">
           <tr>
             <td>
-              <form>
+              <form onsubmit="e.preventDefault(); onFormSubmit();" autocomplete="off">
+                <div>
+                  <label>Image URL</label>
+                  <input type="text" name="propertyIMG" id="propImg">
+                </div>
                 <div>
                   <label>Property Code</label>
                   <input type="text" name="propertyCode" id="propCode">
@@ -95,6 +99,7 @@
               <table class="list" id="propertyList">
                 <thead>
                   <tr>
+                    <th>Image URL</th>
                     <th>Property Code</th>
                     <th>Property Type</th>
                     <th>Property Address</th>
