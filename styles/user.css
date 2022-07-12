@@ -2,11 +2,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 body {
     font-family: sans-serif;
+    
 }
+
+/* html {
+  overflow: hidden;
+} */
 
 #home {
     background: linear-gradient(rgba(18, 17, 18, 0.3), rgba(26, 25, 25, 0.3)), url('../images/small_house_with_key_home.jpg') no-repeat center center/cover;
@@ -19,12 +25,22 @@ body {
 }
 
 .properties-section {
-    background-color: rgb(230, 147, 51);
+    background-color: rgba(68, 90, 189, 0.842);
     min-height: 100vh;
 }
 
-.custom-sell {
-    background-color: rgb(107, 101, 101);
+.custom-cards {
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    
+}
+
+.row-div {
+  display: grid;
+  grid-template-columns: repeat(3, 223px);
+  gap: 0px;
+  justify-content: center;
+  width: 95%;
 }
 
 .log-out-btn {
@@ -41,10 +57,11 @@ body {
 } 
 
 .myCards {
-display: grid;
+  display: grid;
   grid-template-columns: repeat(3, 223px);
   gap: 0px;
   justify-content: center;
+  width: 95%;
 }
 
 .custom-sell:hover {
@@ -59,6 +76,18 @@ display: grid;
 
   @media (max-width: 500px) {
     .myCards {
+      grid-template-columns: repeat(1, 223px);
+    }
+  }
+
+  @media (max-width: 1000px) {
+    .row-div {
+      grid-template-columns: repeat(2, 223px);
+    }
+  }
+
+  @media (max-width: 500px) {
+    .row-div {
       grid-template-columns: repeat(1, 223px);
     }
   }
@@ -90,6 +119,14 @@ display: grid;
     color: rgb(245, 243, 241) !important;
     position: relative;
     top: 5px;
+}
+
+.about-section {
+  background-color: rgba(68, 90, 189, 0.842);
+}
+
+.contact-section {
+
 }
 
   /* .card-1 {
