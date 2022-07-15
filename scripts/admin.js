@@ -11,6 +11,7 @@ function onFormSubmit() {
 }
 
 function readFormData() {
+  // let arr =JSON.parse(localStorage.getItem('formData'))
   let formData = {};
   formData["propImg"] = document.getElementById("propImg").value;
   formData["propCode"] = document.getElementById("propCode").value;
@@ -22,6 +23,7 @@ function readFormData() {
 }
 
 function insertNewProperty(data) {
+  //  
   let table = document
     .getElementById("propertyList")
     .getElementsByTagName("tbody")[0];
@@ -80,3 +82,12 @@ function onDelete(td) {
     resetForm();
   }
 }
+
+// function getCrudData(){
+// 	let arr=JSON.parse(localStorage.getItem('formData'));
+// 	return arr;
+// }
+
+// function setCrudData(arr){
+// 	localStorage.setItem('formData',JSON.stringify(arr));
+// }

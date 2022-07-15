@@ -30,8 +30,7 @@ let cards = [
 let generateCards = () => {
     return (_card.innerHTML = cards.map((x) =>{
         return `
-
-        <div class="col-md-4 d-flex justify-content-center mt-md-5" style="width: 100%%;">
+        <div class="col-md-4 d-flex justify-content-center mt-md-5">
             <a href="${x.buttonLink}" class="text-decoration-none">
             <div class="custom-cards text-white">
                 <img width="220" class="mx-auto d-block rounded mt-3" width="200" src="${x.image}" alt="">
@@ -91,16 +90,21 @@ let generateAgents = () => {
     return (_agents.innerHTML = agentsDetails.map((a) =>{
         return `
         
-            <div class="col-sm-3 ">
-                <div class="card">
-                    <div class="card-body">
-                        <img width="220" class="rounded mt-3" width="200" src="${a.img}" alt="">
-                        <h5 class="card-title">${a._name} ${a._surname} - ${a.company}</h5>
-                        <p class="card-text">${a.email}</p>
-                        <p class="card-text">${a.mobile}</p>
-                        <a href="#" class="btn btn-primary">View ${a._name}</a>
-                    </div>
+            
+            <div class="col-md-4 d-flex justify-content-center my-md-5 mx-5">
+            <a href="#" class="text-decoration-none">
+            <div class="custom-cards text-white">
+            <img width="220" class="rounded mt-3" width="200" src="${a.img}" alt="">
+                <div class="details">
+                    <h3 class="text-md-center" style="color: orange;">${a._name} ${a._surname} - ${a.company}</h3>
+                    <p class="text-wrap text-md-center  text-white" style="width: 14rem; color: black;">${a.email}.
+                    </p>
+                    <p class="text-wrap text-md-center  text-white" style="width: 14rem; color: black;">${a.mobile}.
+                    </p>
                 </div>
+            </a>
+            </div>
+        </div>
             
         `
     }).join("")

@@ -16,11 +16,17 @@ body {
     color: white;
     width: 220px;
     height: 250px;
+    border-radius: 10px;
     text-align: center;
     margin: 8px;
     position: relative;
     left: 35px;
     display: none;
+}
+
+.custom-img-filter {
+    width: 200px;
+    height: 220px;
 }
 
 .show {
@@ -43,8 +49,8 @@ body {
 }
 
 .filter-search {
-    background-color: rgb(255, 247, 0);
-    
+    background-color: rgb(78, 162, 179);
+    min-height: 100vh;
 }
 
 .agents {
