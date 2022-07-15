@@ -39,9 +39,9 @@ function insertNewProperty(data) {
   cell6 = newRow.insertCell(5);
   cell6.innerHTML = data.propPrice;
   cell7 = newRow.insertCell(6);
-  cell7.innerHTML = `<a onclick="onEdit(this)">Edit</a> 
+  cell7.innerHTML = `<button onclick="onEdit(this)" class="btn-Custom"><i class="fas fa-pen"></i>Edit</button> 
 
-                        <a onclick="onDelete(this)">Delete</a>`;
+                        <button onclick="onDelete(this)" class="btn-Custom"><i class="fas fa-trash-alt"></i>Delete</button>`;
 }
 
 function resetForm() {

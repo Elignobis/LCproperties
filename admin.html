@@ -73,9 +73,18 @@
                   <label>Property Code</label>
                   <input type="text" name="propertyCode" id="propCode">
                 </div>
-                <div>
+                <!-- <div>
                   <label>Property Type</label>
                   <input type="text" name="propertyType" id="propType">
+                </div> -->
+                <div>
+                  <label for="propType">Property Type</label>
+                  <select id="propType"  class="form-control" required>
+                    <option value="select-type" disabled selected>Select Property Type</option>
+                    <option value="house">House</option>
+                    <option value="apartment">Apartment</option>
+                    <option value="commercial">Commercial</option>
+                </select>
                 </div>
                 <div>
                   <label>Property Address</label>
@@ -105,6 +114,7 @@
                     <th>Property Address</th>
                     <th>Property Size</th>
                     <th>Property Price</th>
+                    <th></th>
                   </tr>
                 </thead>
                 <tbody>

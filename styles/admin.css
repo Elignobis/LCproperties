@@ -124,3 +124,17 @@ label.validation-error {
     border-radius: 20px;
     width: 80%;
 }
+
+.btn-Custom {
+    width: 80px;
+    background-color: rgb(230, 147, 51);
+    color: rgb(10, 10, 10);
+    border: .5px solid rgb(59, 58, 58);
+    border-radius: 5px;
+}
+
+.btn-Custom:hover {
+    box-shadow: 3px 3px 3px rgb(110, 109, 109);
+    background-color: red;
+    color: white;
+}
